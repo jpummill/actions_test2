@@ -10,11 +10,13 @@ on:
 
 jobs: 
   testing: 
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
 
     steps: 
       - name: Building
         run : echo "Hello World from Test"
+        run : uname
+        run : pwd
 
   deploy:
     runs-on: [ubuntu-latest]
