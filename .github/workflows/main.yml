@@ -11,7 +11,12 @@ jobs:
     runs-on: [ubuntu-latest]
 
     steps: 
-      - name: Pring Nice Message
+      - name: Building
         run : echo "Hello World from Test"
 
-    
+  deploy:
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: Deployment
+        run : echo "Hello World from Deploy"
