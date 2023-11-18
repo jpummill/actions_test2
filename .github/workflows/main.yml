@@ -1,0 +1,26 @@
+#----------------------
+#
+#----------------------
+
+name: Build
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs: 
+  testing: 
+    runs-on: [ubuntu-latest]
+
+    steps: 
+      - name: Pring Nice Message
+        run : echo "Hello World from Test"
+    
+  my_deploy: 
+    runs-on: [ubuntu-latest]     
+
+    steps: 
+      - name: Pring Nice Message from Deploy
+        run : echo "Hello World from Deploy"
+    
