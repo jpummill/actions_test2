@@ -14,9 +14,11 @@ jobs:
 
     steps: 
       - name: Building
-        run : echo "Hello World from Test"
-        run : uname
-        run : pwd
+        run : |
+            echo "Hello World from Test"
+            uname
+            pwd
+
 
   deploy:
     runs-on: [ubuntu-latest]
