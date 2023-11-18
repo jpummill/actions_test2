@@ -16,8 +16,9 @@ jobs:
       - name: Building
         run : |
             echo "Hello World from Test"
-            uname
+            uname -a
             pwd
+            ls -latr
 
 
   deploy:
