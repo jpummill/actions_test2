@@ -4,7 +4,8 @@
 
 name: Build
 
-on: push
+on: 
+  push:
 
 jobs: 
   testing: 
